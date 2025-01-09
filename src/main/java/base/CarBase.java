@@ -1,6 +1,7 @@
 package base;
 
-import org.openqa.selenium.By;
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,4 +23,19 @@ public class CarBase {
 		//WebElement title=driver.findElement(By.xpath("//h1"));
 		return title.getText();
 	}
+	
+	
+	@FindBy(xpath="//h3")
+	List<WebElement> carModel;
+	
+	@FindBy(xpath="//span[@class='o-cpnuEd']/span[1]")
+	List<WebElement> carPrice;
+	
+	public void getCarModelAndPrice() {
+		for(int i=0;i<carPrice.size();i++) {
+			System.out.println("Car Model: " + carModel.get(i).getText() +" --------Car Price: "
+					+carPrice.get(i).getText());
+		}
+	}
+	
 }

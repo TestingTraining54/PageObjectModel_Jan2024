@@ -1,0 +1,4 @@
+INFO    2025-01-09 15:01:18,346 [main] baseTest.BaseTest  - Test case execution started
+INFO    2025-01-09 15:01:18,346 [main] baseTest.BaseTest  - config properties file has been loaded
+INFO    2025-01-09 15:01:22,108 [main] baseTest.BaseTest  - Edge browser has been launched
+INFO    2025-01-09 15:01:22,335 [main] baseTest.BaseTest  - Browser is maximized
